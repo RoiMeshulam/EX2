@@ -21,12 +21,12 @@ int main() {
                 printf("please enter i and j in that order\n");
                 scanf("%d",&i);
                 scanf("%d",&j);
-                checker= fooB(i,j,mat);
+                checker= fooB(mat,i,j);
                 if (checker==1){
-                    printf("True");
+                    printf("True\n");
                 }
                 else{
-                    printf("False");
+                    printf("False\n");
                 }
                 continue;
 
