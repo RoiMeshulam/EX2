@@ -47,12 +47,7 @@ int main() {
 
             case 'D':
                 printf("""\n time to go, bye");
-                break;
+                return 0;
         }
     }
-
-
-
-
-    return 0;
 }
