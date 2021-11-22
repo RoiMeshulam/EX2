@@ -19,7 +19,7 @@ int main() {
 
             case 'B':
                 printf("please enter i and j in that order\n");
-                scanf("%d",&j);
+                scanf("%d",&i);
                 scanf("%d",&j);
                 checker= fooB(i,j,mat);
                 if (checker==1){

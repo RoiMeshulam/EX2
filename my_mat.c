@@ -107,21 +107,21 @@ int mat_builder (int mat0[10][10],int mat1[10][10],int k ){
                 x=mat0[i][k];
                 y=mat0[k][j];
                 checker2=INFINITY;
-                if (x!=INFINITY && y!=2147483647){
+                if (x!=2147483647 && y!=2147483647){
                     checker2=x+y;
                 }
-                if (mat0[i][j]!=INFINITY){
+                if (mat0[i][j]!=2147483647){
                     checker1=mat0[i][j];
                 }
-                if (checker1==INFINITY && checker2==INFINITY){
+                if (checker1==2147483647 && checker2==2147483647){
                     mat1[i][j]=INFINITY;
                     continue;
                 }
-                if (checker1!=INFINITY && checker2==INFINITY){
+                if (checker1!=2147483647 && checker2==2147483647){
                     mat1[i][j]=checker1;
                     continue;
                 }
-                if (checker1==INFINITY && checker2!=INFINITY){
+                if (checker1==2147483647 && checker2!=2147483647){
                     mat1[i][j]=checker2;
                     continue;
                 }
@@ -163,7 +163,7 @@ int fooC(int mat[10][10],int i,int j){
             checker=*checker2;
         }
     }
-    if (checker!=0 && checker!=INFINITY){
+    if (checker!=0 && checker!=2147483647){
         return checker;
     }
     else{
