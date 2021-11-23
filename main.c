@@ -7,20 +7,17 @@ int main() {
     int mat[10][10];
     while(1){
         char ch;
-        printf("Please enter A,B,C or D\n");
         scanf("%c",&ch);
         switch (ch) {
             case 'A':
                 checker=fooA(mat);
                 if (checker==1){
-                    printf("Matrix was built successfully\n");
                 }
                 continue;
 
             case 'B':
-                printf("please enter i and j in that order\n");
-                scanf("%d",&i);
-                scanf("%d",&j);
+                scanf(" %d",&i);
+                scanf(" %d",&j);
                 checker= fooB(mat,i,j);
                 if (checker==1){
                     printf("True\n");
@@ -32,9 +29,8 @@ int main() {
 
 
             case 'C':
-                printf("please enter k and m in that order\n");
-                scanf("%d",&k);
-                scanf("%d",&m);
+                scanf(" %d",&k);
+                scanf(" %d",&m);
                 checker=fooC(mat,k,m);
                 if (checker==-1){
                     printf("-1 \n");
@@ -46,8 +42,8 @@ int main() {
 
 
             case 'D':
-                printf("""\n time to go, bye");
                 return 0;
         }
     }
+    return 0;
 }

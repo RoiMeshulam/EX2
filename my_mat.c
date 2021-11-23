@@ -68,8 +68,7 @@ int fooA(int mat[10][10]){
     int i,j;
     for(i=0; i<10;i++){
         for(j=0;j<10;j++){
-            printf("Enter value for mat[%d][%d]:",i,j);
-            scanf("%d", &mat[i][j]);
+            scanf(" %d", &mat[i][j]);
             if (mat[i][j]==0 && i!=j){
                 mat[i][j]=2147483647;
             }
